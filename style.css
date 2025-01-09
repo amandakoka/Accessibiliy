@@ -144,6 +144,8 @@ ul#menu { /* Add space around */
 
 .colourHeading {
     color:#987554;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 .redtext {
@@ -212,6 +214,11 @@ button {
 }
 
 /* Similar Products Section */
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .similar-product-list li img {
     max-width: 100%; /* make images fill the container */
     height: auto;
