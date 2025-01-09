@@ -242,6 +242,10 @@ footer#red {
     padding-bottom: 4em;
 }
 
+footer p {
+    color: #f4f4f4;
+}
+
 div#white {
     background-color: #ffffff;
     border-top: 1px solid #575859;
