@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Juice</title>
+    <!-- Link to the main stylesheet for overall page styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to a secondary stylesheet for grid-based layout -->
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!--Site header with logo and tagline -->
+            <h1 id="logo">
+                <span class="robot">Robot</span>
+                <span class="juice">Juice</span>
+            </h1>
+            <p id="tagline">fictitious cycle lubricants</p>
+            <!-- Navigation menu for site links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li> <!-- Home page link -->
+                    <li><a href="product.html">Products</a></li> <!-- Product page link -->
+                    <li><a href="#">Protect</a></li>
+                    <li><a href="#">Stockists</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+     
+        </header>
+        <!-- Main Content of the page -->
+        <main>
+            <!-- Banner image and motto -->
+            <section>
+            <img src="images/robotbanner.jpg" alt="Robot banner of a robot riding a motorcycle." id="imagebanner">
+            <h2 id="motto" class="border">Robot juice is the ultimate fictitious bicycle and motorcycle lubricant oils.</h2>
+            </section>
+            <!-- Product feature section displaying different product types -->
+            <div class="products-container border">
+                <article class="products">
+                    <!-- Product image with alt text for accessibility -->
+                    <img src="images/bikechain-bikeoil.jpg" alt="Image of a close up bike chain.">
+                    <h2>Bike oil</h2>
+                    <p>Stops and protects against rust, reduces friction on moving parts and is essential on any cycle.</p>
+                </article>
+                <article class="products">
+                    <img src="images/cycleside-drylubrication.jpg" alt="Image of zoomed in person riding a bicyle.">
+                    <h2>Dry Lubricant</h2>
+                    <p>Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</p>
+                </article>
+                <article class="products">
+                    <img src="images/frontcycle-wetlubrication.jpg" alt="Image of a person riding a bicycle in wet conditions.">
+                    <h2>Wet Lubricant</h2>
+                    <p>A thick, heavy duty lube designed to stick to the chain in wet conditions.
+                    Ideal for extreme weather and long distance riding.</p>
+                </article>
+                <article class="products">
+                    <img src="images/productreviews.jpg" alt="Images of peoples hand with a pen in writing.">
+                    <h2>Products Reviews</h2>
+                    <p>Read what the press and our customers say about our excellent products.</p>
+                </article>
+            </div>
+            <!-- Latest news and Poll container for grid styling -->
+            <div class="NewsPoll-container">
+                <!-- Latest news section  -->
+                <section class="latestNews">
+                    <h2>Latest News</h2>
+                    <!-- Each <article> represents one product and has been used as they are all related. -->
+                    <article>
+                        <h4 class="colourHeading">News Item One!</h4>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                        Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                        Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                        <p class="redtext italic">September, 2012</p>
+                    </article>
+                    <article>
+                        <h4 class="colourHeading">News Item One!</h4>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                        Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                        Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                        <p class="redtext italic">September, 2012</p>
+                    </article>
+                    <article>
+                        <h4 class="colourHeading">News Item One!</h4>
+                        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                        Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                        Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                        <p class="redtext italic">September, 2012</p>
+                    </article>
+                </section>
+                <!-- Reader poll and competition section -->
+                <section class="poll" id="readerPoll">
+                    <h2>Reader poll</h2>
+                    <p class="redtext">Are Robot Juice the best and most usable and accessible fake oils around?</p>
+                    <label>
+                        <input type="radio" name="poll" value="yes">
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="poll" value="no">
+                        No
+                    </label>
+                    <h2>Competition</h2>
+                    <p>Win absolutely nothing by enetering this extremely expensive competition. 
+                    Robot juice will not send you a full range of our cycling and motorcycle oils 
+                    and lubricants as we do not exist. But just for fun..</p>
+                    <p>Which is our address made up from?</p>
+                    <p>a) Armageddon</p>
+                    <p>b) Harry Potter</p>
+                    <p>c) The Simpsons (Movie)</p>
+                    <p>answers on a postcard please.</p>
+                </section>
+            </div>
+            <!-- Reviews and links split into 2 smaller sections for grid styling -->
+            <div id="white">
+                <img src="images/cyclemagazine.jpg" alt="Image of a cyle magazine">
+                <section class="reviews">
+                    <h2>Latest Reviews</h2>
+                    <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants.
+                    Robot Juice Dry lube was rated the highest out of over 40 top brand lubes.
+                    </p>
+                </section>
+                <section class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="https://www.edgehill.ac.uk/">Edge Hill University</a></li>
+                        <li><a href="#">Dave Walsh</a></li>
+                        <li><a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a></li>
+                        <li><a href="#">CIS1110- Web Design and Development module</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <!-- Footer section containing contact information split into 2 sections for grid styling -->
+        <footer id="red">
+            <div id="footer-left">
+                <p>Robot Juice Fictitious Products not Ltd., Unit 93/4, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+                <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+            </div>
+            <div id="footer-right"> 
+                <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
+                <p>Copyright @ 2018 Dave Walsh. Design by Dave Walsh</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

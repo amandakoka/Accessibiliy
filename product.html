@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Juice</title>
+    <!-- Link to the main stylesheet for overall page styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to a secondary stylesheet for grid-based layout -->
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!--Site header with logo and tagline -->
+            <h1 id="logo">
+                <span class="robot">Robot</span>
+                <span class="juice">Juice</span>
+            </h1>
+            <p id="tagline">fictitious cycle lubricants</p>
+            <!-- Navigation menu for site links -->      
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li> <!-- Home page link -->
+                    <li><a href="product.html">Products</a></li> <!-- Product page link -->
+                    <li><a href="#">Protect</a></li>
+                    <li><a href="#">Stockists</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Buying bike oil section -->
+            <section class="buying-container border">
+                <!-- bike oil thumbnail section contained in a div for flexbox styling -->
+                <div class="thumbnail">
+                    <img src="images/prod-thumb1.jpg" alt="Product thumbnail 1: small image of the main image of Robot Juice Bike Oil with a bike behind the bottle ">
+                    <img src="images/prod-thumb2.jpg" alt="Product thumbnail 2: image of a close up tyre">
+                    <img src="images/prod-thumb3.jpg" alt="Product thumbnail 3: small image of oil splat">
+                </div>
+                <!-- Bike oil image and form for buying -->
+                <img src="images/robotjuicebikeoil.jpg" alt="Main image of Robot Juice Bike Oil with a bike behind the bottle">
+                <form>
+                    <h2 class="bold">Bike Oil</h2>
+                    <p class="redtext">£99.99</p>
+                    <!-- Size and Quantity Dropdown selection contained in a div for grid styling -->
+                    <div id="dropdown-container">
+                        <select id="size" name="size">
+                            <option value="" disabled selected>Size</option>
+                            <option value="small">Small (250ml)</option>
+                            <option value="medium">Medium (500ml)</option>
+                            <option value="large">Large (1L)</option>
+                        </select>
+                        <select id="quantity" name="quantity">
+                            <option value="" disabled selected>Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <!-- Buy button -->
+                    <button type="submit">Buy Now</button>
+                    <p class="greyUpper">Find nearest stockist</p>
+                    <p class="greyUpper">Share</p>
+                    <!-- Social media share icons -->
+                     <ul>
+                        <li><img class="right" src="images/facebook.jpg" alt="Image of the facebook logo"></li>
+                        <li><img class="right" src="images/twitter.jpg" alt="Image of the twitter logo"></li>
+                        <li><img class="right" src="images/email.jpg" alt="Image of the email logo"></li>
+                     </ul>
+                    <!-- bike oil description -->
+                    <p>Robot Juice bike oil for bicycles stops rust and other corrosion
+                    from starting. Applied to already corroding metals it breaks down 
+                    the corrosion and starts preventing it from building up and protects
+                    from the point of contact.</p>
+                </form>
+            </section>
+            <!-- Section for similar products containing images -->
+            <section class="border">
+                <h2>Similar Products</h2>
+                <ul class="similar-product-list">
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                    <li><img src="images/simprod.jpg" alt="Image of similar products"></li>
+                </ul>
+            </section>
+            <!--Product Reviews Section -->
+            <h2>Product Reviews</h2>
+            <hr>
+
+            <!-- Each review is placed in an <article> since it's all realted. I've put the image and header 
+            in a <section> inside the article so I can style them to appear on the left,
+            with the review text on the right. I haven't managed to do this layout yet,
+            but that's the goal with this structure -->
+            <div class="productreviews-container">
+                <article id="bikeoil">
+                    <img src="images/reviewicon1.jpg" alt="Image of robot on red background">
+                    <h4>Great Grease!!</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                    Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                    Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                </article>
+                <hr>
+                <article>
+                    <img src="images/reviewicon1.jpg" alt="Image of robot on red background">
+                    <h4>Great Grease!!</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                    Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                    Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                </article>
+                <hr>
+                <article>
+                    <img src="images/reviewicon1.jpg" alt="Image of robot on red background">
+                    <h4>Great Grease!!</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                    Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                    Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                </article>
+                <hr>
+                <article>
+                    <img src="images/reviewicon2.jpg" alt="Image of robot computer">
+                    <h4>This juice just keeps me going..</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                    Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                    Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                </article>
+                <hr>
+                <article>
+                    <img src="images/reviewicon1.jpg" alt="Image of robot on red background">
+                    <h4>Great Grease!!</h4>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum semper nunc non non tortor senectus rutrum.
+                    Placerat posuere curae praesent est montes cras. Nisi natoque nulla dictum lacinia eros vitae varius viverra.
+                    Malesuada pulvinar eleifend massa neque pretium integer ligula.</p>
+                </article>
+                <hr>
+            </div>
+
+            <!-- Hidden review section for javascript api review loading  -->
+            <div class="reviews hidden">
+                <dl id="reviewList">
+                    <!-- Reviews put in here -->
+                </dl>
+            </div>
+
+            <!-- Button to trigger reviews -->
+            <button id="reviewButton" type="button">Read all reviews</button>
+
+            <!-- Reviews and links split into 2 smaller sections for grid styling -->
+            <div id="white">
+                <img src="images/cyclemagazine.jpg" alt="Image of a cyle magazine">
+                <section class="reviews">
+                    <h2>Latest Reviews</h2>
+                    <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants.
+                    Robot Juice Dry lube was rated the highest out of over 40 top brand lubes.
+                    </p>
+                </section>
+                <section class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="https://www.edgehill.ac.uk/">Edge Hill University</a></li>
+                        <li><a href="#">Dave Walsh</a></li>
+                        <li><a href="https://twitter.com/walsh_d">https://twitter.com/walsh_d</a></li>
+                        <li><a href="#">CIS1110- Web Design and Development module</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <!-- Footer section containing contact information split into 2 sections for grid styling -->
+        <footer id="red">
+            <div id="footer-left">
+                <p>Robot Juice Fictitious Products not Ltd., Unit 93/4, Privet Drive, Little Whingeing, Surrey DN18 5RP</p>
+                <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+            </div>
+            <div id="footer-right"> 
+                <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
+                <p>Copyright @ 2018 Dave Walsh. Design by Dave Walsh</p>
+            </div>
+        </footer>
+    </div>
+    <!-- External JavaScript reviews.js file that handles functionality related to read more product reviews. 
+     Placed at the end so all the HTML is loaded before the script loads  -->
+    <script src="reviews.js"></script>
+</body>
+</html>

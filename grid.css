@@ -1,0 +1,110 @@
+/* Navigation menu grid styling */
+#menu {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+}
+
+/* Bike Oil Buying section */
+#dropdown-container {
+    display: grid; /* Use CSS grid */
+    grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+    gap: 10px; /* Add space between the columns */
+}
+
+/* Style the unordered list to use grid layout */
+.similar-product-list {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 5px;
+}
+
+
+/* Grid Styles for screens larger than 870px */
+@media (min-width: 870px) {
+    /*Changes nav menu grid on small screen from 3fr to 6fr on larger screen */
+    #menu {
+        grid-template-columns: repeat(6, 1fr); 
+    }
+
+    /* Puts the products container into a 4 column grid */
+    .products-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em; 
+    }
+
+    /* Latest News and Poll section grid css styling*/
+    .NewsPoll-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .latestNews {
+        grid-column: 1 / 3; /* takes up columns 1-2 */
+    }
+
+    .poll {
+        grid-column: 3 ; /* takes up the last column */
+    }
+
+    /* Changes similar product grid from 3fr to 6fr on larger screen */
+    .similar-product-list {
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 2em; 
+    }
+
+    /* W3Schools was used to help write this Buying Oil Section : https://www.w3schools.com/cssref/css3_pr_flex-wrap.php*/
+    /* Buying Oil Section Flexbox css styling */
+    .buying-container {
+        display: flex; /* Flexbox layout */
+        flex-wrap: wrap; /* Allows the form and images to wrap on smaller screens */
+        gap: 20px;
+    } 
+
+    .thumbnail {
+        display: flex;
+        flex-direction: column; /* makes thumbnail images appear in column beside main image*/
+        gap: 10px;
+    }
+
+    form {
+        flex: 1; /* Makes the form take up the rest of the space */
+    }
+
+    /* Product Reviews Section*/
+
+    /*White section css grid styling*/
+    #white {
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+        
+    }
+
+    #white img {
+        grid-column: 1; /* Puts the image in the first column */
+        padding-top: 1em ;
+    }
+    
+    .reviews {
+        grid-column: 2; /* Puts the "Latest Reviews" section in the second column */
+    }
+    
+    .links {
+        grid-column: 4; /* Puts the "Links" section in the fourth column */
+    }
+
+    /* Footer grid css styling */
+    footer {
+        display: grid; /* grid layout */
+        grid-template-columns: repeat(6, 1fr); /* Creates 6 equal-width columns */
+    }
+
+    #footer-left {
+        grid-column: 1 / 5; /* Puts the left footer content in the columns 1-4*/
+    }
+
+    #footer-right {
+        grid-column: 5 / 7; /* Puts the right footer content in the columns 5-6*/
+    }
+  }
+  

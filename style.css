@@ -1,0 +1,271 @@
+/* Import of google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Iceberg&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto ;
+}
+
+h1, h2, h3 {
+    font-family: 'Iceberg', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Border bottom for a few sections*/
+.border {
+    border-bottom: 1px solid #575859;
+}
+
+/* I used W3Schools to help write this code to centre the container.
+https://www.w3schools.com/css/css_margin.asp*/
+ .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px; /* makes the max-width of container */
+    margin: 0 auto; /* Centers the container with space to the right and left not top and bottom */
+}
+
+.products-container, .NewsPoll-container, #white {
+    margin-top: 2em;
+
+}
+
+/* Logo styling */
+h1#logo {
+    font-size: 2.5em ;
+    margin:0;
+}
+
+.robot {
+    color: #C5110B;
+    font-family: 'Damion', Arial, Helvetica, sans-serif;
+    
+}
+
+.juice {
+    color: #000000;
+    font-family: 'Damion', sans-serif; 
+}
+
+p#tagline {
+    margin: 0;
+}
+
+/* Navigation Menu Styling */
+nav {
+    padding-top:0;
+    margin-top:0;
+}
+
+#menu li { /* Style for each menu item */
+    display: block;
+    border-top: 1px solid #575859; /* Border at the top */
+    border-bottom: 1px solid #575859; /* Border at the bottom */
+}
+
+#menu li a { /* Style for the links inside the list items */
+    display: block; /* Make the link fill the entire <li> */
+    padding: 10px 15px;
+    text-align: center; /* Center the link text */
+    color: #575859;
+}
+
+#menu li a:hover { /* Add hover effect for links */
+    background-color: #C5110B;  /* Change background color on hover */
+    color: #ffffff;             /* Change text color on hover */
+}
+
+ul#menu { /* Add space around */
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/*Image and motto section styling*/
+#imagebanner {
+    width: 100%; /* so image fills the container as without this it stopped before the end */
+    border-bottom: 5px solid #575859;
+}
+
+#motto {
+    font-size: 28px;
+    text-align: center;
+    color: #575859;
+    padding-bottom: 1em;
+}
+
+/* Styling for products section */
+.products-container {
+    padding-bottom: 1em;
+}
+
+.products {
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.products img { /* Make images responsive */
+    width: 100%;  /* Ensure images scale responsively */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.products h2 {
+    color: #000000;
+}
+
+.products h2, p {
+    text-align: left;
+}
+
+.NewsPoll-container {
+    padding-bottom: 2em;
+}
+
+/* Latest News section styling */
+.latestNews {
+    padding-right: 2em;
+}
+
+.colourHeading {
+    color:#987554;
+}
+
+.redtext {
+    color: #C5110B;
+}
+
+.italic {
+    font-style: italic;
+    text-align: right;
+}
+
+/* Reader Poll section styling */
+#readerPoll {
+    background-color: #ffffff;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+label {
+    display:block;
+    padding: 1em;
+    margin-left: 1.5em;
+}
+
+/* Product.html bike oil buying section styling */
+.buying-container {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#dropdown-container {
+    width: 100%; /* Make the div take full width */
+}
+
+select {
+    padding: 10px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border-radius: 2px ;
+    border: 1px solid #575859; /* Set border color */
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    border: 0;
+    background-color: #C5110B;
+    color:#ffffff;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.greyUpper {
+    text-transform: uppercase;
+    color: #575859;
+    text-align: end;
+    font-weight: bold;
+}
+
+.right {
+    float: right; /* aligns social media icons to the right */
+    margin-left: 5px; /* adds space between social icons */
+}
+
+/* Similar Products Section */
+.similar-product-list li img {
+    max-width: 100%; /* make images fill the container */
+    height: auto;
+    padding-bottom: 10%; /* adds space between the image and bottom */
+     
+}
+
+/* Product Reviews Section */
+button#reviewButton {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer; 
+    margin:0 auto;
+}
+
+/* Footer styles */
+footer#red {
+    background-color: #C5110B;
+    padding-bottom: 4em;
+}
+
+div#white {
+    background-color: #ffffff;
+    border-top: 1px solid #575859;
+    padding-bottom: 2em;
+}
+
+#white img {
+    padding-top: 1em ;
+}
+
+#white p, a {
+    color: #C5110B;   
+}
+
+#white a {
+    text-decoration: underline;
+}
+
+#white h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C5110B;
+}
+
+#white li{
+    padding-bottom: 5%;
+}
+
+@media (min-width: 870px) {
+
+    /* Change size of review button on larger screens so it doesn't take up the whole screen widthn*/
+    button#reviewButton {
+        width: 20%;
+    }
+}
